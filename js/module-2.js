@@ -957,3 +957,244 @@ ext - рядок, що зберігає розширення, наприклад
 function createFileName(name, ext) {
   return file = name.trim() + "." + ext;
 } */
+
+
+
+
+/*     Цикл while
+      
+    while (condition) {
+      statement // код, тіло циклу
+    }
+
+    let count = 0;
+
+    while (count < 10) {
+      console.log(`Count: ${count}`);
+      count += 1;
+} */
+    
+/* Змінна clientCounter зберігає кількість зайнятих номерів на поточний момент.
+
+Змінна maxClients зберігає загальну кількість номерів у готелі.
+
+
+
+Завдяки циклу while місця в готелі будуть заповнюватися доти, доки поточна кількість клієнтів не дорівнюватиме максимально допустимій.
+ */
+
+
+/* let clientCounter = 18;
+const maxClients = 25;
+
+while (clientCounter < maxClients) {
+  console.log(clientCounter);
+  clientCounter += 1;
+} */
+/* 
+Функція calculateTotal(number) приймає ціле число (параметр number). Доповни код функції так, щоб вона повертала суму всіх цілих чисел від одиниці до цього числа включно. Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
+
+Оголошена функція calculateTotal(number)
+Виклик функції calculateTotal(1) повертає 1
+Виклик функції calculateTotal(3) повертає 6
+Виклик функції calculateTotal(0) повертає 0
+Виклик функції calculateTotal(18) повертає 171
+Виклик функції calculateTotal(24) повертає 300
+Виклик функції calculateTotal() з випадковим числом повертає правильне значення
+
+function calculateTotal(number) {
+  let totalNumber = 0;
+  let count = 1;
+  while (count<= number) {
+    totalNumber += count;
+    count +=1;
+  }
+  return totalNumber;
+}
+ */
+
+/* Цикл do…while
+
+do {
+   statement // код, який буде виконуватися
+} while (condition);
+
+let count = 0;
+
+do {
+	console.log(`Count: ${count}`);
+	count += 1;
+} while (count < 5);
+
+У прикладі код усередині циклу do виконається один раз, навіть якщо count більше або дорівнює 5.
+
+
+
+Після цього умову буде перевірено, і якщо count менше 5, цикл продовжить виконуватися. */
+
+/* Цикл for
+
+for (initialization; condition; afterthought) {
+  statement // Тіло циклу
+}
+
+for (let i = 0; i <= 20; i += 5) {
+  console.log(i);
+}
+
+for (let i = 20; i >= 0; i -= 5) {
+  console.log(i);
+} */
+
+/* Функція calculateTotal(number) приймає ціле число (параметр number) Використовуючи цикл for, доповни код функції так, щоб вона повертала суму всіх цілих чисел від одиниці до цього числа включно. Наприклад, якщо number дорівнює 3, то сума - це 1 + 2 + 3, тобто 6.
+
+Оголошена функція calculateTotal(number)
+Виклик функції calculateTotal(1) повертає 1
+Виклик функції calculateTotal(0) повертає 0
+Виклик функції calculateTotal(7) повертає 28
+Виклик функції calculateTotal(18) повертає 171
+Виклик функції calculateTotal(24) повертає 300
+Виклик функції calculateTotal() з випадковим числом повертає правильне значення
+
+function calculateTotal(number) {
+  let result = 0;
+  for (let i = 1; i <= number; i++) {
+    result += i;
+  }
+  return result;
+} */
+
+/* Інкремент і декремент
+
+Префіксний інкремент  (++value)
+let x = 5;
+const y = ++x;
+console.log(x); // 6
+console.log(y); // 6
+
+Постфіксний інкремент (value++)
+let x = 5;
+const y = x++;
+console.log(x); // 6
+console.log(y); // 5
+
+Префіксний декремент(--value)
+let x = 5;
+const y = --x;
+console.log(x); // 4
+console.log(y); // 4 */
+
+/* Постфіксний декремент(value--)
+let x = 5;
+const y = x--;
+console.log(x); // 4
+console.log(y); // 5
+
+for (let i = 0; i <= 5; i++) {
+  console.log(i);
+} */
+
+/* Функція calculateEvenTotal(number) приймає ціле число (параметр number). Доповни код функції так, щоб вона повертала суму всіх парних цілих чисел від одиниці до цього числа включно. Парні числа — це ті, що можна поділити на 2 без остачі (як це зробити розглядалося у темі Арифметичні операції у модулі 1). Наприклад, якщо number дорівнює 6, то сума - це 2 + 4 + 6, тобто 12.
+
+Оголошена функція calculateEvenTotal(number)
+Виклик функції calculateEvenTotal(1) повертає 0
+Виклик функції calculateEvenTotal(3) повертає 2
+Виклик функції calculateEvenTotal(7) повертає 12
+Виклик функції calculateEvenTotal(18) повертає 90
+Виклик функції calculateEvenTotal(27) повертає 182
+Виклик функції calculateEvenTotal() з випадковим числом повертає правильне значення
+
+function calculateEvenTotal(number) {
+  let result = 0;
+  for (let i = 0; i <= number; i ++){
+    if (i % 2 === 0) {
+      result += i;
+    }
+  }
+  return result;
+} */
+
+/* Оператор break
+
+for (let i = 0; i < 10; i+=1) {
+  console.log(i);
+
+  if (i === 5) {
+    console.log('Met the number 5, interrupt the execution of the cycle');
+    break;
+  }
+}
+
+console.log('Log after cycle'); */
+
+/* Доповни код таким чином, щоб у змінну number записувалося перше число у проміжку від start до end, яке ділиться на 5 без остачі.
+
+Оголошена змінна start
+Оголошена змінна end
+Оголошена змінна number
+Якщо start це 6, а end це 17, то підсумкове значення змінної number дорівнює 10
+Якщо start це 17, а end це 25, то підсумкове значення змінної number дорівнює 20
+Якщо start це 2, а end це 11, то підсумкове значення змінної number дорівнює 5
+В коді є цикл for, в якому використовується break для можливості виходу з циклу до завершення всіх ітерацій
+
+const start = 6;
+const end = 17;
+let number; */
+
+/* Оператор break і функції
+
+function findNumberFromFive(max, target) {
+	console.log("Log in the body of the function before the cycle");
+
+  for (let i = 5; i <= max; i += 1) {
+    console.log("Current counter value i:", i);
+
+    if (i === target) {
+      console.log(`Found the number $ {target}, interrupt the cycle`);
+			break;
+    }
+  }
+
+  console.log("Log in body function after cycle");
+}
+
+findNumber(10, 6);
+console.log("Log after exiting function"); */
+
+/* 
+function findNumberFromFive(max, target) {
+	console.log("Log in the body of the function before the cycle");
+
+	for (let i = 5; i <= max; i += 1) {
+	    console.log("Current counter value i:", i);
+	
+	    if (i === target) {
+	      console.log(`Found the number $ {target}, we make a return, interrupting the loop and function`);
+				return i;
+	    }
+	  }
+
+  // Цей console.log не виконується
+  console.log("Log in body function after cycle");
+}
+
+const result = findNumber(10, 6);
+console.log("Log after exiting function");
+console.log(`Result of function execution ${result}`); */
+
+/* 
+Функція findNumber(start, end, divisor) приймає три параметра, які є цілими числами.
+
+Доповни код функції таким чином, щоб вона:
+
+повертала перше число у діапазоні від start до end включно, яке ділиться на divisor без остачі
+не використовуй оператор break
+Оголошена функція findNumber(start, end, divisor)
+Виклик findNumber(2, 6, 5) повертає 5
+Виклик findNumber(8, 17, 3) повертає 9
+Виклик findNumber(6, 9, 4) повертає 8
+Виклик findNumber(16, 35, 7) повертає 21
+Виклик findNumber() з випадковим набором чисел повертає правильний результат
+В циклі for не повинен використовуватися break для можливості виходу з циклу до завершення всіх ітерацій
+
+function findNumber(start, end, divisor) {} */
