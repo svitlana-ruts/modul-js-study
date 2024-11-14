@@ -903,8 +903,8 @@ makeMessage();
 //Виклик calculateTotalPrice(12, 70) повертає 840
 //Виклик функції з випадковими, але валідними аргументами, повертає правильне значення
 
-function calculateTotalPrice(orderedQuantity, pricePerItem) {
-    return orderedQuantity * pricePerItem;
-}
+//function calculateTotalPrice(orderedQuantity, pricePerItem) {
+    //return orderedQuantity * pricePerItem;
+//}
 
-calculateTotalPrice ()
+//calculateTotalPrice ()
